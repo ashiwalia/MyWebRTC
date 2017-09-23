@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#424242"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textWaiting"
+        android:text="Waiting..."
+        android:textColor="#fff"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputHolder"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+
+       <EditText
+           android:layout_width="200dp"
+           android:layout_height="wrap_content"
+           android:id="@+id/roomNameEditText"
+           android:backgroundTint="@color/colorAccent"
+           android:textColor="#fff"
+           android:hint="Create or join a room"
+           android:textColorHint="#66ffffff"
+           android:textSize="14sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create/Join"
+            android:textAllCaps="false"
+            android:layout_margin="20dp"
+            android:onClick="createOrJoinRoom"/>
+
+
+    </LinearLayout>
+</RelativeLayout>
